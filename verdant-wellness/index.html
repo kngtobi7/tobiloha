@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#123d2d">
+  <meta name="description" content="Verdant — your thoughtful everyday nutrition and movement companion.">
+  <title>Verdant — Eat well. Feel brilliant.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" aria-label="Verdant home"><span class="brand-mark">✳</span><span>verdant<span
+            class="brand-dot">.</span><small>WELLNESS STUDIO</small></span></a>
+      <div class="side-label">YOUR SPACE</div>
+      <nav class="nav">
+        <button class="nav-link active" data-view="overview"><span>⌂</span> Overview</button>
+        <button class="nav-link" data-view="planner"><span>▦</span> Meal planner</button>
+        <button class="nav-link" data-view="bmi"><span>◉</span> BMI & body</button>
+        <button class="nav-link" data-view="nutrition"><span>◌</span> Nutrition tracker</button>
+        <button class="nav-link" data-view="movement"><span>↗</span> Movement</button>
+        <button class="nav-link" data-view="nearby"><span>⌖</span> Eat nearby</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="tip-card">
+          <div class="tip-spark">✦</div><b>A little reminder</b>
+          <p>Progress is built from small, kind choices repeated often.</p>
+        </div>
+        <div class="profile">
+          <div class="avatar">V</div>
+          <div><b>Your wellness space</b><small>Personal dashboard</small></div><span class="more">···</span>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <div class="breadcrumb">Your space <span>/</span> <b id="crumb">Overview</b></div>
+        <div class="top-actions"><span class="today" id="today"></span><button class="icon-btn"
+            title="Notifications">♧</button>
+          <div class="mini-avatar">V</div>
+        </div>
+      </header>
+      <section class="view active" id="overview">
+        <div class="welcome-row">
+          <div>
+            <div class="eyebrow"><span class="live-dot"></span> YOUR DAILY RESET</div>
+            <h1>Make room for <em>wellness.</em></h1>
+            <p class="subhead">A healthier day doesn't need to be complicated. Let's make it yours.</p>
+          </div>
+          <div class="streak-pill">✦ &nbsp; Your fresh start begins here</div>
+        </div>
+        <div class="hero">
+          <div class="hero-copy">
+            <div class="hero-kicker">THE ART OF FEELING GOOD</div>
+            <h2>Eat with intention.<br><i>Move with joy.</i></h2>
+            <p>Thoughtful food, feel-good movement and little wins — all in one calm space.</p><button class="light-btn"
+              data-go="planner">Build my meal plan <span>↗</span></button>
+          </div>
+          <div class="hero-art">
+            <div class="sun"></div>
+            <div class="plate">
+              <div class="plate-food"><i></i><i></i><i></i><i></i><b></b></div>
+            </div>
+            <div class="leaf leaf-one">❧</div>
+            <div class="leaf leaf-two">❧</div>
+            <div class="art-caption">NOURISH<br>YOUR WAY</div>
+          </div>
+          <div class="hero-index">01 <span>—</span> 04</div>
+        </div>
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">YOUR WELLNESS TOOLKIT</div>
+            <h2>Where would you like to begin?</h2>
+          </div><span class="muted">A little better, every day.</span>
+        </div>
+        <div class="feature-grid">
+          <button class="feature-card" data-go="planner"><span class="feature-icon peach">♧</span><span
+              class="feature-arrow">↗</span><b>Meal planning</b>
+            <p>Build a delicious plan around your age, goals and lifestyle.</p><small>PLAN YOUR PLATE →</small>
+          </button>
+          <button class="feature-card" data-go="bmi"><span class="feature-icon lilac">◉</span><span
+              class="feature-arrow">↗</span><b>BMI & body</b>
+            <p>Understand your measurements with thoughtful context.</p><small>CHECK YOUR STATS →</small>
+          </button>
+          <button class="feature-card" data-go="nutrition"><span class="feature-icon yellow">◌</span><span
+              class="feature-arrow">↗</span><b>Nutrition insights</b>
+            <p>Explore calories and macros in the foods you enjoy.</p><small>COUNT NUTRIENTS →</small>
+          </button>
+          <button class="feature-card" data-go="movement"><span class="feature-icon mint">↗</span><span
+              class="feature-arrow">↗</span><b>Feel-good movement</b>
+            <p>Find a movement routine that meets you where you are.</p><small>FIND YOUR FLOW →</small>
+          </button>
+        </div>
+        <div class="bottom-note"><span>✳</span>
+          <div><b>Wellness isn't one-size-fits-all.</b>
+            <p>Verdant is a guide, not a diagnosis. Your age, health, culture and preferences matter.</p>
+          </div><button data-go="nearby">Explore food spots ↗</button>
+        </div>
+      </section>
+
+      <section class="view" id="planner">
+        <div class="page-intro">
+          <div class="eyebrow">A MENU THAT MOVES WITH YOU</div>
+          <h1>Your week, <em>well nourished.</em></h1>
+          <p class="subhead">Tell us a little about your day and we'll shape a flexible meal idea.</p>
+        </div>
+        <div class="content-grid">
+          <div class="panel form-panel">
+            <div class="panel-title"><span class="step">01</span>
+              <div>
+                <h3>Make it yours</h3>
+                <p>Personalise your meal inspiration.</p>
+              </div>
+            </div>
+            <label>Age group<select id="ageGroup">
+                <option value="adult">Adult (18–64)</option>
+                <option value="teen">Teen (13–17)</option>
+                <option value="child">Child (5–12)</option>
+                <option value="older">Older adult (65+)</option>
+                <option value="toddler">Toddler (2–4)</option>
+              </select></label>
+            <label>Food preference<select id="diet">
+                <option value="balanced">Balanced / no restriction</option>
+                <option value="vegetarian">Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="pescatarian">Pescatarian</option>
+              </select></label>
+            <label>Your main focus<select id="goal">
+                <option value="energy">Everyday energy</option>
+                <option value="balanced">Balanced eating</option>
+                <option value="protein">Protein variety</option>
+                <option value="budget">Budget-friendly</option>
+              </select></label>
+            <label>Foods to avoid <input id="avoid" placeholder="e.g. peanuts, prawns (optional)"></label>
+            <button class="primary-btn full" id="generatePlan">Create my meal plan <span>↗</span></button>
+            <p class="tiny-note">For children and teens, portions and nutrition needs vary with growth. Plans are ideas
+              for a caregiver to review.</p>
+          </div>
+          <div class="panel plan-panel">
+            <div class="plan-top">
+              <div>
+                <div class="eyebrow">YOUR PERSONAL MENU</div>
+                <h3>Today's inspiration</h3>
+              </div><span class="plan-tag">FLEXIBLE IDEAS</span>
+            </div>
+            <div id="mealResults" class="meal-results">
+              <div class="empty-state"><span>♧</span><b>Your next delicious idea starts here.</b>
+                <p>Choose your preferences and create a meal plan to see breakfast, lunch, dinner and snack inspiration.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="bmi">
+        <div class="page-intro">
+          <div class="eyebrow">KNOW YOUR NUMBERS, GENTLY</div>
+          <h1>Body insights, <em>with context.</em></h1>
+          <p class="subhead">BMI is one screening measure — it never tells your whole health story.</p>
+        </div>
+        <div class="content-grid">
+          <div class="panel form-panel">
+            <div class="panel-title"><span class="step">02</span>
+              <div>
+                <h3>Your measurements</h3>
+                <p>Use metric measurements for this estimate.</p>
+              </div>
+            </div>
+            <label>Age (years)<input type="number" id="bmiAge" min="2" max="120" placeholder="e.g. 28"></label>
+            <label>Height (cm)<input type="number" id="height" min="50" max="250" placeholder="e.g. 170"></label>
+            <label>Weight (kg)<input type="number" id="weight" min="5" max="400" step=".1"
+                placeholder="e.g. 68"></label>
+            <button class="primary-btn full" id="calculateBmi">Calculate BMI <span>↗</span></button>
+          </div>
+          <div class="panel result-panel" id="bmiResult">
+            <div class="empty-state"><span>◉</span><b>Your result will appear here.</b>
+              <p>Enter your age, height and weight to calculate your BMI.</p>
+            </div>
+          </div>
+        </div>
+        <div class="info-strip"><b>Important:</b> For children and teens (ages 2–19), BMI must be interpreted using age-
+          and sex-specific growth charts and percentiles. This simple calculator does not classify their result.
+          Pregnancy, high muscle mass and some health conditions also affect interpretation.</div>
+      </section>
+
+      <section class="view" id="nutrition">
+        <div class="page-intro">
+          <div class="eyebrow">CURIOUS ABOUT WHAT'S ON YOUR PLATE?</div>
+          <h1>Nutrition, <em>made clearer.</em></h1>
+          <p class="subhead">Add foods and serving sizes to estimate your meal's nutrient profile.</p>
+        </div>
+        <div class="content-grid nutrition-grid">
+          <div class="panel form-panel">
+            <div class="panel-title"><span class="step">03</span>
+              <div>
+                <h3>Build your plate</h3>
+                <p>Estimates per selected serving.</p>
+              </div>
+            </div>
+            <label>Choose a food<select id="foodSelect"></select></label><label>Servings<input type="number"
+                id="servings" min=".25" max="20" step=".25" value="1"></label>
+            <button class="primary-btn full" id="addFood">Add to my plate +</button>
+            <div class="food-list" id="foodList">
+              <p class="muted">Your food list is waiting.</p>
+            </div>
+          </div>
+          <div class="panel nutrient-panel">
+            <div class="eyebrow">YOUR PLATE AT A GLANCE</div>
+            <h3>Estimated nutrients</h3>
+            <div class="calorie-total"><strong id="calories">0</strong><span>kcal <small>estimated energy</small></span>
+            </div>
+            <div class="macro" data-macro="protein">
+              <div><span>Protein</span><b id="protein">0 g</b></div>
+              <div class="track"><i id="proteinBar"></i></div>
+            </div>
+            <div class="macro" data-macro="carbs">
+              <div><span>Carbohydrates</span><b id="carbs">0 g</b></div>
+              <div class="track"><i id="carbsBar"></i></div>
+            </div>
+            <div class="macro" data-macro="fat">
+              <div><span>Fat</span><b id="fat">0 g</b></div>
+              <div class="track"><i id="fatBar"></i></div>
+            </div>
+            <div class="macro" data-macro="fiber">
+              <div><span>Fibre</span><b id="fiber">0 g</b></div>
+              <div class="track"><i id="fiberBar"></i></div>
+            </div>
+            <p class="tiny-note">Values are approximate averages and vary by recipe, brand and preparation. This is not
+              a prescribed daily target.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="view" id="movement">
+        <div class="page-intro">
+          <div class="eyebrow">FIND YOUR OWN RHYTHM</div>
+          <h1>Movement that <em>feels good.</em></h1>
+          <p class="subhead">Choose a level and explore gentle ways to bring more movement into your day.</p>
+        </div>
+        <div class="panel movement-panel">
+          <div class="movement-controls">
+            <div>
+              <h3>Your movement menu</h3>
+              <p>Choose the level that feels right today.</p>
+            </div><select id="fitnessLevel">
+              <option value="gentle">Gentle / beginner</option>
+              <option value="moderate">Moderate</option>
+              <option value="active">More active</option>
+            </select>
+          </div>
+          <div class="exercise-grid" id="exerciseGrid"></div>
+        </div>
+        <div class="info-strip">Start comfortably, warm up, hydrate and stop if you feel pain, dizziness or unusual
+          breathlessness. Children, older adults and anyone with a health condition may need age-appropriate adaptations
+          or professional guidance.</div>
+      </section>
+
+      <section class="view" id="nearby">
+        <div class="page-intro">
+          <div class="eyebrow">GOOD FOOD, AROUND THE CORNER</div>
+          <h1>Find your next <em>favourite.</em></h1>
+          <p class="subhead">Discover nearby places to eat using your device location.</p>
+        </div>
+        <div class="panel nearby-panel">
+          <div class="nearby-head">
+            <div>
+              <h3>Places to eat around you</h3>
+              <p>Search results are provided by OpenStreetMap contributors.</p>
+            </div><button class="primary-btn" id="findPlaces">⌖ Find near me</button>
+          </div>
+          <div id="places" class="places">
+            <div class="empty-state"><span>⌖</span><b>Your local food map awaits.</b>
+              <p>Allow location access to find restaurants, cafés and food spots near you.</p>
+            </div>
+          </div>
+        </div>
+        <p class="tiny-note">Location is used in your browser to search OpenStreetMap's public data. Results may be
+          incomplete. Always confirm opening hours, menus, dietary suitability and current details with the venue.</p>
+      </section>
+      <footer> <span>✳ VERDANT</span><span>Made for more mindful everyday moments.</span><a href="README.md"
+          target="_blank">Project guide ↗</a></footer>
+    </main>
+  </div>
+  <div class="toast" id="toast" role="status"></div>
+  <script src="app.js"></script>
+</body>
+
+</html>
